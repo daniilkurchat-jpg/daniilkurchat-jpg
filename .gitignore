@@ -1,0 +1,4 @@
+# the raw photo and the prepped grayscale stay local; only the ASCII SVG is published
+source-photo.*
+source-prepped.png
+__pycache__/

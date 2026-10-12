@@ -1,0 +1,68 @@
+{
+  "github_username": "daniilkurchat-jpg",
+  "name": "Daniil Kurchatkin",
+  "prompt": "daniil@github",
+  "portrait_color": "#a5d6ff",
+  "portrait_cols": 160,
+  "about": [
+    [
+      "Name",
+      "Daniil Kurchatkin"
+    ],
+    [
+      "Role",
+      "Digital Marketing Specialist"
+    ],
+    [
+      "Work",
+      "Marketing & Sales, PitStop & Go"
+    ],
+    [
+      "Studio",
+      "Xyra Studios, founder"
+    ],
+    [
+      "Edu",
+      "BA Multimedia + Business, UNB"
+    ],
+    [
+      "Where",
+      "Fredericton, NB, Canada"
+    ],
+    [
+      "Lang",
+      "English, Russian (native)"
+    ]
+  ],
+  "sections": [
+    {
+      "title": "Stack",
+      "rows": [
+        [
+          "Ads",
+          "Google Ads, Meta Ads, GA4, GSC"
+        ],
+        [
+          "Content",
+          "SEO/GEO/AEO, email, Ahrefs, Canva"
+        ],
+        [
+          "Auto",
+          "n8n, Make, HubSpot, Claude Code"
+        ],
+        [
+          "Build",
+          "React, Next.js, Node.js, Python"
+        ]
+      ]
+    },
+    {
+      "title": "Highlights",
+      "bullets": [
+        "Cut CPA 32%, lifted checkouts 900% WoW",
+        "Grew organic traffic 45%, +38% meetings",
+        "Builds AI agents that run his day"
+      ]
+    }
+  ]
+}

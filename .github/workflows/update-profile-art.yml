@@ -1,0 +1,43 @@
+name: Update profile art
+
+# Refreshes the contribution graph from real data every day, and re-renders
+# the whoami card whenever profile.json changes. The ASCII portrait is made
+# locally from a photo and committed, so it is left alone here.
+
+"on":
+  schedule:
+    - cron: "23 9 * * *"   # 09:23 UTC daily, 06:23 in Fredericton
+  workflow_dispatch: {}
+  push:
+    branches: [main]
+
+permissions:
+  contents: write
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r scripts/requirements.txt
+
+      - name: Fetch contribution data (public, no token needed)
+        run: python scripts/fetch_contributions.py
+
+      - name: Render the animated contribution graph
+        run: python scripts/render_contrib_graph.py
+
+      - name: Render the whoami card
+        run: python scripts/render_whoami_card.py
+
+      - name: Commit refreshed art
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: refresh profile art [skip ci]"
+          file_pattern: "data/contributions.json contrib-graph.svg whoami-card.svg"
