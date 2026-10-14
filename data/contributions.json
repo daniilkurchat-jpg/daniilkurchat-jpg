@@ -1,22 +1,22 @@
 {
   "username": "daniilkurchat-jpg",
-  "generated_at": "2026-10-13T17:00:17Z",
+  "generated_at": "2026-10-14T14:33:58Z",
   "range": {
     "start": "2025-10-12",
+    "end": "2026-10-14"
+  },
+  "total_contributions": 10,
+  "active_days": 4,
+  "avg_per_active_day": 2.5,
+  "current_streak": {
+    "length": 2,
+    "start": "2026-10-12",
     "end": "2026-10-13"
   },
-  "total_contributions": 9,
-  "active_days": 3,
-  "avg_per_active_day": 3.0,
-  "current_streak": {
-    "length": 1,
-    "start": "2026-10-12",
-    "end": "2026-10-12"
-  },
   "longest_streak": {
-    "length": 1,
-    "start": "2026-01-11",
-    "end": "2026-01-11"
+    "length": 2,
+    "start": "2026-10-12",
+    "end": "2026-10-13"
   },
   "best_day": {
     "date": "2026-04-05",
@@ -73,7 +73,7 @@
     },
     {
       "month": "2026-10",
-      "total": 3
+      "total": 4
     }
   ],
   "days": [
@@ -1909,6 +1909,11 @@
     },
     {
       "date": "2026-10-13",
+      "count": 1,
+      "level": 2
+    },
+    {
+      "date": "2026-10-14",
       "count": 0,
       "level": 0
     }
